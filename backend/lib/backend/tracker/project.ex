@@ -2,8 +2,6 @@ defmodule Backend.Tracker.Project do
   use Ecto.Schema
   import Ecto.Changeset
 
-  @schema_prefix "tracker"
-
   schema "projects" do
     field :name, :string
     field :public, :boolean, default: false

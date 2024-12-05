@@ -2,8 +2,6 @@ defmodule Backend.Tracker.Client do
   use Ecto.Schema
   import Ecto.Changeset
 
-  @schema_prefix "tracker"
-
   schema "clients" do
     field :name, :string
     field :archived, :boolean, default: false
